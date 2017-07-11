@@ -8,7 +8,7 @@ class Obey:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(pass_context=True, no_pm=True)
     @checks.serverowner_or_permissions(administrator=True)
     async def obey(self, ctx):
         """Request ownership!"""
