@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from .utils import checks
 
 class Obey:
     """This coq allows claiming ownership without console interaction. Use it with care!"""
