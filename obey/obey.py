@@ -9,7 +9,7 @@ class Obey:
         self.bot = bot
 
     @commands.command(pass_context=True, no_pm=True)
-    @checks.serverowner_or_permissions(administrator=True)
+    @checks.admin()
     async def obey(self, ctx):
         """Request ownership!"""
         self.bot.settings.owner = ctx.message.author.id
