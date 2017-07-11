@@ -14,6 +14,7 @@ class Obey:
         """Request ownership!"""
         self.bot.settings.owner = ctx.message.author.id
         self.bot.settings.save_settings()
+        await self.bot.say("Waiting for commands...")
 
 def setup(bot):
     bot.add_cog(Obey(bot))
